@@ -1,0 +1,7 @@
+{
+  "name": "AppMovileNg",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
