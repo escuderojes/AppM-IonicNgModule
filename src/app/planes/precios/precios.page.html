@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Planes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">precios</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="contenedor">
+    <div class="tabla">
+      <h2>Básico anual</h2>
+      <img src="../../../assets/png/1.png" alt="">
+      <h3>200 <sup>$</sup></h3>
+      <p>Empieza aprender con nuestro plan inicial de un año</p>
+      <a [routerLink]="['/login']" class="boton">Paga ahora</a>
+    </div>
+    <div class="tabla hover">
+      <h2>Avanzado duo anual</h2>
+      <img src="../../../assets/png/2.png" alt="">
+      <h3>350<sup>$</sup></h3>
+      <p>Comparte tus aprendizajes con un compañero</p>
+      <a [routerLink]="['/login']" class="boton">Paga ahora</a>
+    </div>
+    <div class="tabla">
+      <h2>Experto Grupo anual</h2>
+      <img src="../../../assets/png/3.png" alt="">
+      <h3>500 <sup>$</sup></h3>
+      <p>Mientras más personas aprendan juntos es más facil</p>
+      <a [routerLink]="['/login']" class="boton">Paga ahora</a>
+    </div>
+  </div>
+</ion-content>

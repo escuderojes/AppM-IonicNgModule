@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+  <section class="container">
+    <header>Solicitud de Beca</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Nombre Completo</label>
+        <input type="text" placeholder="Ingresar Nombre Completo" required />
+      </div>
+
+      <div class="input-box">
+        <label>Email</label>
+        <input type="text" placeholder="Ingresar email" required />
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Número de teléfono</label>
+          <input type="number" placeholder="Ingresar tu teléfono" required />
+        </div>
+        <div class="input-box">
+          <label>Fecha de nacimiento</label>
+          <input type="date" placeholder="Ingresar Fecha" required />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h3>Genero</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" checked />
+            <label for="check-male">Hombre</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" />
+            <label for="check-female">Mujer</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" />
+            <label for="check-other">prefiero no decirlo</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-box address">
+        <label>Dirección</label>
+        <input type="text" placeholder="Ingresar tu Dirección" required />
+        <input type="text" placeholder="Ingresar tu Dirección linea 2" required />
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>Selecciona un país</option>
+              <option>Peru</option>
+              <option>Chile</option>
+              <option>Argentina</option>
+              <option>Bolivia</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Ingresa tu ciudad" required />
+        </div>
+        <div class="column">
+          <input type="text" placeholder="Ingresa tu region" required />
+          <input type="number" placeholder="Ingresa tu código postal" required />
+        </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>¿Para que quieres una beca?</label>
+          <input type="text-area" placeholder="Ingresar argumentos" required />
+        </div>
+      </div>
+      <button [routerLink]="['/enviado']">Enviar</button>
+    </form>
+  </section>
+</ion-content>

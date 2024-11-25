@@ -1,0 +1,26 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #aaa; // Gris
+    color: white;
+    font-size: 16px;
+}

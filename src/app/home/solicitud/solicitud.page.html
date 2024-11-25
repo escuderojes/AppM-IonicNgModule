@@ -1,0 +1,112 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+  <header>
+    <h1>Pruebate</h1>
+  </header>
+  <div class="body">
+    <div class="container-title">Proceso de Beca</div>
+
+    <main>
+      <div class="container-img">
+        <img
+          src="https://i0.wp.com/academiadediseno.com/wp-content/uploads/2024/05/programas-de-becas-en-republica-dominicana.png?fit=920%2C516&ssl=1"
+          alt="imagen-producto" />
+      </div>
+      <div class="container-info-product">
+        <div class="container-price">
+
+        </div>
+
+
+
+        <div class="container-description">
+          <div class="title-description">
+            <h4>¿Como funciona?</h4>
+          </div>
+          <div class="text-description">
+            <p>
+              Este es un proceso para la obtencion de una beca exclusiva, que corresponde a una suscripción de un mes en
+              nuestra plataforma. Funciona de la siguiente manera: Son 2 cursos que tendrás que completar al 100%, una
+              vez completados se habilitará la opción para ingresar tus datos para una solicitud de beca. ¿Te consideras
+              lo suficientmente bueno para aceptar el reto?.
+              Recuerde que el formulario debe ser rellenado por un padre o apoderado mayor de edad.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="container-social">
+          <span>Cursos a completar</span>
+          <!-- <div class="container-buttons-social">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div> -->
+        </div>
+        <div [routerLink]="['/curso']" class="container-categories">
+          <div class="card-category category-1">
+            <p>¿Que aprender primero?</p>
+
+          </div>
+        </div>
+        <input type="checkbox" class="checkbox">
+
+        <div class="text-description">
+          <p>
+            Los fundamentos de programación son los principios básicos que se utilizan en el desarrollo de los programas
+            informáticos. Los programadores necesitan tener una comprensión sólida de estos fundamentos para poder
+            escribir código para nuevos programas, así como para poder depurar y mantener los ya existentes.
+          </p>
+        </div>
+        <!-- ///////////////////////////////////////// -->
+        <div class="container-categories">
+          <div class="card-category category-2">
+            <p>Introducción a la programación</p>
+          </div>
+        </div>
+        <input type="checkbox" class="checkbox">
+        <div class="text-description">
+          <p>
+            La programación orientada a objetos (POO) es un paradigma de programación que se basa en el uso de objetos y
+            clases para modelar conceptos y problemas del mundo real.
+          </p>
+        </div>
+        <!-- ///////////////////////////////////////// -->
+        <div class="container-categories">
+          <div class="card-category category-3">
+            <p>Lógica de programación</p>
+          </div>
+        </div>
+        <input type="checkbox" class="checkbox">
+        <div class="text-description">
+          <p>
+            El desarrollo web backend en Python es clave para construir aplicaciones que no solo interactúan con los
+            usuarios de manera eficiente, sino que también gestionan datos, cumplen con la lógica de negocio y
+            garantizan la seguridad y la escalabilidad de los sistemas.
+          </p>
+        </div>
+      </div>
+      <div class="container-add-cart">
+
+        <button [routerLink]="['/becas']" class="btn-add-to-cart">
+          Continuar
+        </button>
+      </div>
+    </main>
+
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+  </div>
+
+</ion-content>

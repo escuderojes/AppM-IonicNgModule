@@ -1,0 +1,122 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cursos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cursos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+
+  </div>
+  <header>
+
+    <div class="search-container">
+      <input type="text" placeholder="Buscar productos..." class="search-input" />
+      <select class="filter-select">
+        <option value="Categoria0">Filtro</option>
+        <option value="categoria1">Gratis</option>
+        <option value="categoria2">Populares</option>
+        <option value="categoria3">En descuento</option>
+      </select>
+    </div>
+
+    <div class="container-icon">
+      <div class="container-cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon-cart">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+        </svg>
+        <div class="count-products">
+          <span id="contador-productos">0</span>
+        </div>
+      </div>
+
+      <div class="container-cart-products hidden-cart">
+        <div class="row-product hidden">
+          <div class="cart-product">
+            <div class="info-cart-product">
+              <span class="cantidad-producto-carrito">1</span>
+              <p class="titulo-producto-carrito">Zapatos Nike</p>
+              <span class="precio-producto-carrito">$80</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+              stroke="currentColor" class="icon-close" width="25" height="25">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="cart-total hidden">
+          <h3>Total:</h3>
+          <span class="total-pagar">$200</span>
+        </div>
+        <button class="btn-comprar">Ir a comprar</button>
+        <p class="cart-empty">El carrito está vacío</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-items">
+    <div class="item">
+      <figure>
+        <img src="https://i.blogs.es/1d8a5b/python1/1366_2000.jpg" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Curso de Python</h2>
+        <p class="price">$80</p>
+        <button class="btn-add-cart">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="https://blog.interfell.com/hubfs/JavaScript%20un%20lenguaje%20de%20programaci%C3%B3n.jpg"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Curso de JavaScript</h2>
+        <p class="price">$20</p>
+        <button class="btn-add-cart">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="https://blog.facialix.com/wp-content/uploads/2024/09/Curso-online-gratuito-Java-UNAM-jpg.webp"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Curso de Java</h2>
+        <p class="price">$50</p>
+        <button class="btn-add-cart">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="https://www.edc4it.com/images/blog/covers/the-rise-of-typescript.jpg" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Curso de Typescript</h2>
+        <p class="price">$90</p>
+        <button class="btn-add-cart">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="item">
+      <figure>
+        <img src="https://guru-soft.com/wp-content/uploads/2021/10/%C2%BFQue-es-el-SQL.jpg" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Curso de SQL</h2>
+        <p class="price">$50</p>
+        <button class="btn-add-cart">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</ion-content>

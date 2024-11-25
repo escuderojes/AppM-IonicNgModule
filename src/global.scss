@@ -34,4 +34,384 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+@import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Estilos para edad de 13 a 15 años */
+
+/* ********************************** */
+/*           estilos especificos     */
+/* ********************************** */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+    //////////////////login//////////
+    --container-login: #807e7d;
+    --login-button: #ffff;
+    --l-button-letter: #121212;
+    /////////register///////////
+    --container-register: #e69a75;
+    --register-button: #ffff;
+    --r-button-letter: #121212;
+    /////7
+}
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.container-hero {
+    background-color: var(--background-color);
+}
+
+.container-logo h1 a {
+    color: #000;
+
+}
+
+
+.container-user .fa-user {
+    color: var(--primary-color);
+    border-right: 1px solid #e2e2e2;
+}
+
+.container-user .fa-basket-shopping {
+    color: var(--primary-color);
+}
+
+
+/* ************* NAVBAR ************* */
+.container-navbar {
+    background-color: var(--primary-color);
+}
+
+.menu a {
+
+    color: var(--dark-color);
+
+}
+
+.menu a::after {
+    content: '';
+    background-color: #fff;
+
+}
+
+
+.menu a:hover {
+    color: #fff;
+}
+
+.search-form {
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.search-form input {
+    color: #777;
+}
+
+
+.search-form .btn-search {
+    background-color: var(--primary-color);
+}
+
+.btn-search i {
+    color: #fff;
+}
+
+/* ********************************** */
+/*               BANNER               */
+/* ********************************** */
+
+
+
+.content-banner p {
+    color: var(--primary-color);
+}
+
+.content-banner h2 {
+    color: #fff;
+}
+
+.content-banner a {
+    color: #fff;
+    background-color: var(--primary-color);
+
+}
+
+/* ********************************** */
+/*            MAIN CONTENT            */
+/* ********************************** */
+.main-content {
+    background-color: var(--background-color);
+}
+
+/* ********************************** */
+/*              FEATURES              */
+/* ********************************** */
+.card-feature {
+    background-color: #fff;
+
+}
+
+.card-feature i {
+    color: var(--primary-color);
+}
+
+.feature-content span {
+    color: var(--dark-color);
+}
+
+.feature-content p {
+    color: #777;
+
+}
+
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+
+
+.card-category p {
+    color: #fff;
+
+}
+
+.card-category p::after {
+    content: '';
+    background-color: #fff;
+}
+
+.card-category span {
+    color: #fff;
+}
+
+.card-category span:hover {
+    color: var(--primary-color);
+}
+
+/* ********************************** */
+/*            TOP PRODUCTS            */
+/* ********************************** */
+
+
+.container-options span {
+    color: #777;
+    background-color: #fff;
+
+}
+
+.container-options span:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.container-options span.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Products */
+
+.card-product {
+    background-color: #fff;
+
+}
+
+
+
+
+.container-img .discount {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.card-product:hover .discount {
+    background-color: #000;
+}
+
+.button-group span {
+    border: 1px solid var(--primary-color);
+}
+
+.button-group span:hover {
+    background-color: var(--primary-color);
+}
+
+.button-group span i {
+    color: var(--primary-color);
+}
+
+.button-group span:hover i {
+    color: #fff;
+}
+
+
+.stars i {
+    color: var(--primary-color);
+}
+
+
+
+.content-card-product h3:hover {
+    color: var(--primary-color);
+}
+
+.add-cart {
+    border: 2px solid var(--primary-color);
+}
+
+.add-cart:hover {
+    background-color: var(--primary-color);
+}
+
+.add-cart i {
+    color: var(--primary-color);
+}
+
+.add-cart:hover i {
+    color: #fff;
+}
+
+
+
+.content-card-product .price span {
+    color: #777;
+
+}
+
+
+/* ********************************** */
+/*                BLOGS               */
+/* ********************************** */
+
+.button-group-blog span {
+    background-color: #fff;
+}
+
+
+
+.button-group-blog span:hover {
+    background-color: var(--primary-color);
+}
+
+.button-group-blog span:hover i {
+    color: #fff;
+}
+
+.content-blog h3 {
+    color: var(--dark-color);
+}
+
+.content-blog h3:hover {
+    color: var(--primary-color);
+}
+
+.content-blog p {
+    color: #777;
+}
+
+.content-blog span {
+    color: var(--primary-color);
+}
+
+.btn-read-more {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-read-more:hover {
+    background-color: var(--dark-color);
+}
+
+.racha {
+    background-color: var(--primary-color);
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+// .footer {
+//     background-color: var(--primary-color);
+// }
+
+
+// .contact-info ul li,
+// .information ul li,
+// .my-account ul li {
+//     color: #fff;
+// }
+
+// .information ul li a,
+// .my-account ul li a {
+//     color: #fff;
+// }
+
+// .information ul li a:hover,
+// .my-account ul li a:hover {
+//     color: var(--dark-color);
+// }
+
+
+
+// .social-icons span i {
+//     color: #fff;
+// }
+
+// .facebook {
+//     background-color: #3b5998;
+// }
+
+// .twitter {
+//     background-color: #00acee;
+// }
+
+// .youtube {
+//     background-color: #c4302b;
+// }
+
+// .pinterest {
+//     background-color: #c8232c;
+// }
+
+// .instagram {
+//     background: linear-gradient(#405de6,
+//             #833ab4,
+//             #c13584,
+//             #e1306c,
+//             #fd1d1d,
+//             #f56040,
+//             #fcaf45);
+// }
+
+// .content p {
+//     color: #fff;
+// }
+
+// .content input {
+//     border-bottom: 2px solid #d2b495;
+//     color: var(--dark-color);
+// }
+
+// .content input::-webkit-input-placeholder {
+//     color: #eee;
+// }
+
+// .content button {
+//     background-color: #000;
+//     color: #fff;
+// }
+
+// .content button:hover {
+//     background-color: var(--background-color);
+//     color: var(--primary-color);
+// }
+
+// .copyright {
+
+//     border-top: 1px solid #d2b495;
+// }

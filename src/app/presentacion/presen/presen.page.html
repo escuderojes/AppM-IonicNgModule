@@ -1,0 +1,103 @@
+<ion-header [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title>presen</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">presen</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <header>
+    <div class="container">
+      <p class="logo">Terracode!</p>
+      <nav>
+        <i id="menu-toggle" class="fa-solid fa-bars"></i>
+
+        <ul class="menu">
+          <li><a [routerLink]="['/login']">Iniciar Sesión</a></li>
+          <li><a [routerLink]="['/register']">Registrarse</a></li>
+          <li><a [routerLink]="['/precios']">Suscripciones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="hero">
+    <h1>Aprendé a Programar <br>con los Mejores</h1>
+    <button [routerLink]="['/login']">APLICÁ YA!</button>
+  </section>
+
+  <section id="somos-proya">
+    <div class="container">
+
+      <div class="texto">
+
+        <h2>Somos <span class="color-acento">TERRACODE</span></h2>
+        <p>
+          Terracode es un aplicativo móvil diseñado para el aprendizaje de niños, que combina la educación con
+          la tecnología de manera divertida e interactiva. Terracode ofrece una amplia variedad de
+          cursos y recursos educativos que fomentan el desarrollo de habilidades esenciales en un entorno accesible y
+          atractivo.</p>
+      </div>
+    </div>
+  </section>
+  <section id="nuestros-programas">
+    <div class="container">
+      <h2>Nuestros Programas</h2>
+      <div class="programas">
+        <div class="carta">
+          <h3>🎒Plan Básico🎒 Aventurero Novato</h3>
+          <ul>
+            <li> ✔️Acceso a contenido exclusivo</li>
+            <li> ✔️Soporte básico</li>
+          </ul>
+          <button [routerLink]="['/precios']">Suscribirse</button>
+        </div>
+        <div class="carta">
+          <h3>🤝Avanzado Duo🤝 Compañero de Aventuras</h3>
+          <ul>
+            <li> ✔️Acceso a todo el contenido</li>
+            <li> ✔️Soporte prioritario</li>
+            <li> ✔️Descuentos en eventos</li>
+          </ul>
+          <button [routerLink]="['/precios']">Suscribirse</button>
+        </div>
+        <div class="carta">
+          <h3>🏆Plan Elite🏆 Campeones de Terracode</h3>
+          <ul>
+            <li> ✔️Acceso a todo el contenido</li>
+            <li> ✔️Soporte personalizado</li>
+            <li> ✔️Acceso a eventos exclusivos</li>
+            <li> ✔️Certificación al finalizar cursos</li>
+          </ul>
+          <button [routerLink]="['/precios']">Suscribirse</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="caracteristicas">
+    <div class="container">
+      <h2>Nuestros Docentes</h2>
+      <div class="carta2">
+        <img
+          src="https://webadminportal.ucv.edu.pe/uploads/images/2023/08/Ingeniero-de-Sistemas-de-la-UCV-es-gerente-general-750.jpg"
+          alt="Descripción de la persona" class="foto-persona">
+        <h4>Jorge Luis Cordova Lopez</h4>
+        <p class="texto-persona">Docentes extremadamente calificados para cada curso.</p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="final">
+    <h2>¿Listo para programar?</h2>
+    <button>APLICÁ YA!</button>
+  </section>
+</ion-content>

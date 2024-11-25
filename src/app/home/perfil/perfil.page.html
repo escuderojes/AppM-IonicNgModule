@@ -1,0 +1,50 @@
+<ion-header [translucent]="true"></ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="seccion-perfil-usuario">
+    <div class="perfil-usuario-header">
+      <div class="perfil-usuario-portada">
+        <div class="perfil-usuario-avatar">
+          <img src="https://cdn-icons-png.flaticon.com/512/4509/4509616.png" alt="img-avatar">
+          <button type="button" class="boton-avatar">
+            <i class="far fa-image"></i>
+          </button>
+        </div>
+        <button type="button" class="boton-portada">
+          <i class="far fa-image"></i> Cambiar fondo
+        </button>
+      </div>
+    </div>
+
+    <div class="perfil-usuario-body">
+      <div class="perfil-usuario-bio">
+        <h3 class="titulo">{{ userData?.nombres || 'Sin nombre' }}</h3>
+        <p class="texto">Encantada de aprender nuevas cosas cada día.</p>
+      </div>
+
+      <div class="editar-perfil">
+        <button type="button" class="boton-editar" [routerLink]="['/editar-perfil']">Editar Perfil</button>
+      </div>
+
+      <div class="perfil-usuario-footer">
+        <ul class="lista-datos">
+          <li><i class="icono fas fa-map-signs"></i> Usuario: {{ userData?.usuario || 'Sin usuario' }}</li>
+          <li><i class="icono fas fa-phone-alt"></i> Teléfono: {{ userData?.telefono || 'Sin teléfono' }}</li>
+          <li><i class="icono fas fa-building"></i> Ubicación: {{ userData?.direccion || 'Sin dirección' }}</li>
+        </ul>
+        <ul class="lista-datos">
+          <li><i class="icono fas fa-map-marker-alt"></i> Ubicación: {{ userData?.pais || 'Sin país' }}</li>
+          <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento: {{ userData?.fechaNacimiento || 'Sin fecha de
+            nacimiento' }}</li>
+          <li><i class="icono fas fa-user-check"></i> Género: {{ userData?.genero || 'Sin género' }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Register</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="login-container">
+    <div class="login-info-container">
+      <h1 class="title">Registrarse</h1>
+      <h2 class="title">¡Alguien nuevo!</h2>
+      <form class="inputs-container" (ngSubmit)="register(user)">
+        <!-- Nombre de usuario -->
+        <input class="input" type="text" placeholder="Usuario" [(ngModel)]="user.usuario" name="usuario" required />
+
+        <!-- Nombres -->
+        <input class="input" type="text" placeholder="Nombres" [(ngModel)]="user.nombres" name="nombres" required />
+
+        <!-- Email -->
+        <input class="input" type="email" placeholder="Email" [(ngModel)]="user.email" name="email" required />
+
+        <!-- Contraseña -->
+        <input class="input" type="password" placeholder="Contraseña" [(ngModel)]="user.password" name="password"
+          required />
+
+        <button class="btn" type="submit">Iniciemos!</button>
+
+        <p>¿No tienes una cuenta?
+          <span class="span" [routerLink]="['/login']" routerDirection="forward" routerLinkActive="active-link">
+            Iniciar Sesión
+          </span>
+        </p>
+      </form>
+    </div>
+  </div>
+</ion-content>

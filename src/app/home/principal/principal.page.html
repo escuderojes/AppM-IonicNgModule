@@ -1,0 +1,554 @@
+<ion-content [fullscreen]="true">
+
+
+  <header>
+    <div class="container-hero">
+      <div class="container hero">
+        <div class="customer-support">
+          <i class="fa-solid fa-headset"></i>
+          <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">926980976</span>
+          </div>
+        </div>
+
+        <div class="container-logo">
+          <i class="fa-solid fa-code"></i>
+          <h1 class="logo"><a href="/">Terracode</a></h1>
+        </div>
+
+        <div class="container-user">
+          <i [routerLink]="['/perfil']" class="fa-solid fa-user"></i>
+
+          <div class="content-shopping-cart">
+            <span class="text">Carrito</span>
+            <span class="number">(0)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-navbar">
+      <nav class="navbar container">
+        <i id="menu-toggle" class="fa-solid fa-bars" (click)="toggleMenu()"></i>
+        <ul class="menu" [class.active]="isMenuActive">
+          <li><a [routerLink]="['/precios']">Suscribirse</a></li>
+          <li><a [routerLink]="['/examen']">Pruebate</a></li>
+        </ul>
+
+        <form class="search-form">
+          <input type="search" placeholder="Buscar..." />
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <section class="banner">
+    <div class="content-banner">
+      <p>Empecemos a aprender</p>
+      <h2>Suscripción Mensual<br />Cursos 100% Virtuales</h2>
+      <a href="#">Comprar ahora</a>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="container container-features">
+      <div class="card-feature">
+        <i class="fa-solid fa-plane-up"></i>
+        <div class="feature-content">
+          <span>Alcance</span>
+          <p>Cualquier parte del mundo</p>
+        </div>
+      </div>
+      <div class="card-feature">
+        <i class="fa-solid fa-wallet"></i>
+        <div class="feature-content">
+          <span>Contrareembolso</span>
+          <p>100% garantía de devolución de dinero</p>
+        </div>
+      </div>
+      <div class="card-feature">
+        <i class="fa-solid fa-gift"></i>
+        <div class="feature-content">
+          <span>Beca honorifica</span>
+          <p>Regalamos suscripciones a los mejores</p>
+        </div>
+      </div>
+      <div class="card-feature">
+        <i class="fa-solid fa-headset"></i>
+        <div class="feature-content">
+          <span>Servicio al cliente 24/7</span>
+          <p>LLámenos 24/7 al 926980976</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container top-categories">
+      <h1 class="heading-1">Tu racha</h1>
+      <div class="container-racha">
+        <div class="racha">
+          <img
+            src="https://preview.redd.it/streak-flame-updated-v0-3n46sx7a0e9b1.png?width=283&format=png&auto=webp&s=74253ccd745fc4cf470e99c589921ce4d83c4d10"
+            alt="Llamita" class="llamita"> <!-- Imagen de la llamita -->
+          <h2>Racha</h2>
+          <p>12 días seguidos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container top-products">
+      <h1 class="heading-1">Mejores Cursos</h1>
+
+      <div class="container-options">
+        <span [routerLink]="['/cursos']" class="active">Ver más</span>
+        <!-- <span>Más recientes</span>
+				<span>Mejores Vendidos</span> -->
+      </div>
+
+      <div class="container-products">
+        <!-- Producto 1 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/python_94570.png" alt="python.jpg" />
+            <span class="discount">-13%</span>
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Python Intensivo</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">$4.60 <span>$5.30</span></p>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://img.icons8.com/?size=512&id=13679&format=png" alt="java.jpg" />
+            <span class="discount">-22%</span>
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Java desde Cero</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">$5.70 <span>$7.30</span></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://img.icons8.com/color/512/typescript.png" alt="Typescript.JPG" />
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Typescript Intermedio</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">$3.20</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/17265/17265861.png" alt="sql.jpg" />
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>SQL Server Completo</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">$5.60</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <img src="https://cdn.alfabetajuega.com/alfabetajuega/2021/08/Bioma-de-la-Selva-en-Terraria.jpg"
+        alt="Gallery Img1" class="gallery-img-1" /><img
+        src="https://pm1.aminoapps.com/7015/ce2b1ac151cd151400c951279027181a01780fcbr1-800-341v2_hq.jpg"
+        alt="Gallery Img2" class="gallery-img-2" /><img
+        src="https://pm1.aminoapps.com/6547/09bb806386babd8ef8bc99953a317e7b4e86c114_hq.jpg" alt="Gallery Img3"
+        class="gallery-img-3" /><img src="../../../assets/princi/carmesi2.jpg" alt="Gallery Img4"
+        class="gallery-img-4" /><img src="../../../assets/princi/rain2.jpg" alt="Gallery Img5" class="gallery-img-5" />
+    </section>
+
+    <section class="container specials">
+      <h1 class="heading-1">Cursos Gratis</h1>
+
+      <div class="container-products">
+        <!-- Producto 1 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://img.icons8.com/?size=512&id=20906&format=png" alt="git.jpg" />
+            <span class="discount">-100%</span>
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Aprende GIT</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">Gratis <span>$5.30</span></p>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="css.jpg" />
+            <span class="discount">-100%</span>
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>CSS</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">Gratis <span>$7.30</span></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
+              alt="html.jpg" />
+            <span class="discount">-100%</span>
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>HTML en 2 Horas</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">Gratis <span>$5.50</span></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="https://vikinguard.com/wp-content/uploads/2024/08/%C2%BFQue-aprender-primero-Java-o-Python.png"
+              alt="learn.jpg" />
+            <span class="discount">-100%</span>
+            <div class="button-group">
+              <span>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-code-compare"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>¿Que Aprender Primero?</h3>
+            <span class="add-cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </span>
+            <p class="price">Gratis <span>$5.50</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container blogs">
+      <h1 class="heading-1">Ultimos Consejos</h1>
+
+      <div class="container-blogs">
+        <!-- <div class="card-blog">
+					<div class="container-img">
+						<img src="https://pockethost.app/wp-content/uploads/2022/12/Eye-of-Cthulhu-Terraria-1024x583.webp"
+							alt="Imagen Blog 1" />
+						<div class="button-group-blog">
+							<span>
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-link"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-blog">
+						<h3>Entender Conceptos Difíciles (como bucles o variables)</h3>
+
+						<p>
+							Si no entiendes qué es un bucle (loop), ¡piensa en un juego de saltar la cuerda! Imagina que
+							cada salto es una vuelta del bucle, y sigue saltando hasta que te cansas o decides parar.
+
+						</p>
+						
+					</div>
+				</div> -->
+        <!-- <div class="card-blog">
+					<div class="container-img">
+						<img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/08/terraria-party-girl-hosting-a-party-for-everyone.jpg"
+							alt="Imagen Blog 2" />
+						<div class="button-group-blog">
+							<span>
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-link"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-blog">
+						<h3>Frustrarse con los Errores</h3>
+
+						<p>
+							Piensa que cada vez que te equivocas en tu código, ¡es como si un monstruito del juego
+							intentara detenerte! Pero si logras encontrar el error, atrapas al monstruito. Cada error es
+							una pista para capturarlo y resolver el problema. Si te sientes frustrado, toma un respiro y
+							vuelve a intentarlo.
+						</p>
+						<div class="btn-read-more">Leer más</div>
+					</div>
+				</div> -->
+        <div class="card-blog">
+          <div class="container-img">
+            <img
+              src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/08/terraria-party-girl-hosting-a-party-for-everyone.jpg"
+              alt="Imagen Blog 3" />
+            <div class="button-group-blog">
+              <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-link"></i>
+              </span>
+            </div>
+          </div>
+          <div class="content-blog">
+            <h3>El Secreto del Superpoder de la Paciencia</h3>
+            <p>
+              Imagínate que aprender a programar es como cuidar una planta mágica. Al principio, parece
+              que no pasa nada, pero si sigues regándola (practicando y aprendiendo) todos los días,
+              ¡crecerá y se convertirá en un gran árbol de conocimientos! A veces, las plantas mágicas
+              tardan un poquito más en crecer, pero eso no significa que no estés haciendo un buen
+              trabajo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer class="footer">
+		<div class="container container-footer">
+			<div class="menu-footer">
+				<div class="contact-info">
+					<p class="title-footer">Información de Contacto</p>
+					<ul>
+						<li>
+							Dirección: 71 Pennington Lane Vernon Rockville, CT
+							06066
+						</li>
+						<li>Teléfono: 123-456-7890</li>
+						<li>Fax: 55555300</li>
+						<li>EmaiL: baristas@support.com</li>
+					</ul>
+					<div class="social-icons">
+						<span class="facebook">
+							<i class="fa-brands fa-facebook-f"></i>
+						</span>
+						<span class="twitter">
+							<i class="fa-brands fa-twitter"></i>
+						</span>
+						<span class="youtube">
+							<i class="fa-brands fa-youtube"></i>
+						</span>
+						<span class="pinterest">
+							<i class="fa-brands fa-pinterest-p"></i>
+						</span>
+						<span class="instagram">
+							<i class="fa-brands fa-instagram"></i>
+						</span>
+					</div>
+				</div>
+
+				<div class="information">
+					<p class="title-footer">Información</p>
+					<ul>
+						<li><a href="#">Acerca de Nosotros</a></li>
+						<li><a href="#">Información Delivery</a></li>
+						<li><a href="#">Politicas de Privacidad</a></li>
+						<li><a href="#">Términos y condiciones</a></li>
+						<li><a href="#">Contactános</a></li>
+					</ul>
+				</div>
+
+				<div class="my-account">
+					<p class="title-footer">Mi cuenta</p>
+
+					<ul>
+						<li><a href="#">Mi cuenta</a></li>
+						<li><a href="#">Historial de ordenes</a></li>
+						<li><a href="#">Lista de deseos</a></li>
+						<li><a href="#">Boletín</a></li>
+						<li><a href="#">Reembolsos</a></li>
+					</ul>
+				</div>
+
+				<div class="newsletter">
+					<p class="title-footer">Boletín informativo</p>
+
+					<div class="content">
+						<p>
+							Suscríbete a nuestros boletines ahora y mantente al
+							día con nuevas colecciones y ofertas exclusivas.
+						</p>
+						<input type="email" placeholder="Ingresa el correo aquí...">
+						<button>Suscríbete</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<p>
+					Desarrollado por Programación para el mundo &copy; 2022
+				</p>
+
+				<img src="img/payment.png" alt="Pagos">
+			</div>
+		</div>
+	</footer> -->
+
+
+
+</ion-content>

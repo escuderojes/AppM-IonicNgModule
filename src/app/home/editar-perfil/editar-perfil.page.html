@@ -1,0 +1,84 @@
+<ion-header [translucent]="true"></ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title>Editar Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="container">
+    <header>Editar Datos</header>
+    <form (ngSubmit)="saveUserData()" class="form">
+      <div class="input-box">
+        <label>Nombre Completo</label>
+        <input type="text" [(ngModel)]="userData.nombres" name="nombres" placeholder="Ingresar Nombre Completo"
+          required />
+      </div>
+
+      <div class="input-box">
+        <label>Usuario</label>
+        <input type="text" [(ngModel)]="userData.usuario" name="usuario" placeholder="Ingresar Usuario" required />
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Número de teléfono</label>
+          <input type="number" [(ngModel)]="userData.telefono" name="telefono" placeholder="Ingresar tu teléfono"
+            required />
+        </div>
+        <div class="input-box">
+          <label>Fecha de nacimiento</label>
+          <input type="date" [(ngModel)]="userData.fechaNacimiento" name="fechaNacimiento" placeholder="Ingresar Fecha"
+            required />
+        </div>
+      </div>
+
+      <div class="gender-box">
+        <h3>Género</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" [(ngModel)]="userData.genero" name="genero" id="check-male" value="Hombre" />
+            <label for="check-male">Hombre</label>
+          </div>
+          <div class="gender">
+            <input type="radio" [(ngModel)]="userData.genero" name="genero" id="check-female" value="Mujer" />
+            <label for="check-female">Mujer</label>
+          </div>
+          <div class="gender">
+            <input type="radio" [(ngModel)]="userData.genero" name="genero" id="check-other"
+              value="Prefiero no decirlo" />
+            <label for="check-other">Prefiero no decirlo</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box address">
+        <label>Dirección</label>
+        <input type="text" [(ngModel)]="userData.direccion" name="direccion" placeholder="Ingresar tu Dirección"
+          required />
+        <div class="column">
+          <div class="select-box">
+            <select [(ngModel)]="userData.pais" name="pais">
+              <option value="Peru">Perú</option>
+              <option value="Chile">Chile</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+            </select>
+          </div>
+          <input type="text" [(ngModel)]="userData.ciudad" name="ciudad" placeholder="Ingresa tu ciudad" required />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Añade una descripción</label>
+          <input type="text" [(ngModel)]="userData.descripcion" name="descripcion" placeholder="Ingresar descripción"
+            required />
+        </div>
+      </div>
+
+      <button type="submit">Guardar</button>
+    </form>
+  </section>
+</ion-content>
